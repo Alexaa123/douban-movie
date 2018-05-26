@@ -10,12 +10,14 @@ this.top250Page()
 bind:function(){},
 start:function(){},
 tkop250Page(){}
-}```
+}
+```
 ### 相关注意：
 - 在对象内部的this直接指代该对象
 - 对于构建拉动条，在容器元素上面加上css样式 `  overflow:scroll;`即可
 - 对于拉动拉动条触发的事件，可以使用函数节流，防止触发频率过高
-``` $('main').on('scroll',function(){
+``` 
+$('main').on('scroll',function(){
     if(clock){
         clearTimeout
     }
@@ -24,7 +26,8 @@ tkop250Page(){}
         _this.start()
     },300)
     }             
-    ) ```
+    ) 
+   ```
     
 -  对于ajax的请求，可以给ajax加上锁，防止在一次请求还没有完成的时候同步发生多次请求；
 ```
